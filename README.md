@@ -1,7 +1,9 @@
-# -M3OEP-MPL2-adunstan
-This is my attempt at a sudoku solver
+# Sudoku Solver
 
-This is my implementation of Knuth's algorithm x with dancing links to solve sudoku puzzles. The user interface is writen in python with pygame, and the algorithm is writen in c++. Algorithm X is a depth first search algorithm and the dancing links structure is a 2 dimentional doubly linked circular list. 
+This is my implementation of Knuth's algorithm x with dancing links to solve sudoku puzzles. The user interface is writen in python with pygame, and the algorithm is writen in c++. The C++ first converts the sudoku into an exact cover problem which it solves with Kunith's Dancing Links process. The core of the algorithm adding and removing connections from a two-dimensional circular double linked list. The solved exact cover is then converted back into sudoku and displayed. 
+
+Later I re-wrote the UI in JS and hosted the code on Heroku. You can try it out [here](https://www.andrewfdunstan.com/code/sudoku)
+
 
 If you are running into problems here are some tips:
 
